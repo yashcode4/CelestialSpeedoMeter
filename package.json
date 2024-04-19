@@ -1,0 +1,15 @@
+{
+  "name": "celestialspeedometer",
+  "version": "1.0.0",
+  "description": "This project depicts an interactive and educational experience for users curious about the vast distances and time scales involved in interplanetary travel. Specifically, it focuses on illustrating the time taken by light to travel between two planets within our solar system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yash Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
