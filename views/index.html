@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CelestialSpeedometer</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    Hello World
+    <div class="fixed">
+        <nav class="navbar">
+            <h1>CelestialSpeedoMeter</h1>
+        </nav>
+
+        <div class="heading">
+            <h2>The time taken by the light from the sun to reach the earth is 8 minutes and 20 seconds.</h2>
+        </div>
+
+        <div class="container">
+
+            <div class="lightPathBehind">
+                <!-- span tag is the light passing behind the galleries -->
+                <span></span>
+
+                <!-- Gallery 1 -->
+                <div class="gallery1">
+                    <div class="controls">
+                        <button class="prev-btn"><img src="images/previous.png" alt="previous"></button>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="images/sun_image.png" alt="sun_image">
+                        <img src="images/earth_image.png" alt="earth_image">
+                    </div>
+
+                    <div class="controls">
+                        <button class="next-btn"><img src="images/next.png" alt="next"></button>
+                    </div>
+                </div>
+
+                <!-- Light Path -->
+                <div class="lightPath">
+                </div>
+
+                <!-- Gallery 2 -->
+                <div class="gallery1">
+                    <div class="controls">
+                        <button class="prev-btn"><img src="images/previous.png" alt="previous"></button>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="images/earth_image.png" alt="earth_image">
+                    </div>
+
+                    <div class="controls">
+                        <button class="next-btn"><img src="images/next.png" alt="next"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            This website is made by YASH.
+        </div>
+
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
