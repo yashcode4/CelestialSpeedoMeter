@@ -47,8 +47,8 @@ body {
 }
 
 /* Heading */
-.heading h2 {
-    padding: 10px 200px;
+.heading h4 {
+    padding: 10px 150px;
     font-size: 24px;
 }
 
