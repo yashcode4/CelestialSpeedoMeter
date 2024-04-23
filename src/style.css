@@ -116,7 +116,7 @@ span::before {
 }
 
 /* Gallery CSS */
-.gallery1 {
+.gallery1, .gallery2 {
     display: flex;
     flex-direction: column;
     align-items: center;

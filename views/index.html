@@ -14,8 +14,8 @@
             <h1>CelestialSpeedoMeter</h1>
         </nav>
 
-        <div class="heading">
-            <h2>The time taken by the light from the sun to reach the earth is 8 minutes and 20 seconds.</h2>
+        <div id="heading" class="heading">
+
         </div>
 
         <div class="container">
@@ -30,9 +30,10 @@
                         <button class="prev-btn"><img src="images/previous.png" alt="previous"></button>
                     </div>
 
-                    <div class="image-container">
-                        <img src="images/sun_image.png" alt="sun_image">
-                        <img src="images/earth_image.png" alt="earth_image">
+                    <div id="object1" class="image-container">
+                        <img data-value="sun" src="images/sun_image.png" alt="sun_image">
+                        <img data-value="earth" src="images/earth_image.png" alt="earth_image">
+                        <img data-value="moon" src="images/moon_image.png" alt="moon_image">
                     </div>
 
                     <div class="controls">
@@ -45,13 +46,15 @@
                 </div>
 
                 <!-- Gallery 2 -->
-                <div class="gallery1">
+                <div class="gallery2">
                     <div class="controls">
                         <button class="prev-btn"><img src="images/previous.png" alt="previous"></button>
                     </div>
 
-                    <div class="image-container">
-                        <img src="images/earth_image.png" alt="earth_image">
+                    <div id="object2" class="image-container">
+                        <img data-value="earth" src="images/earth_image.png" alt="earth_image">
+                        <img data-value="sun" src="images/sun_image.png" alt="sun_image">
+                        <img data-value="moon" src="images/moon_image.png" alt="moon_image">
                     </div>
 
                     <div class="controls">
