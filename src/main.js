@@ -78,10 +78,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const distance = getDistance(object1, object2);
     const lightSpeed = 299792 // km/s
     const time = distance / lightSpeed; // seconds
-
+  
     // Update the light duration
-    stringTime = time.toString() + 's'; // time data type is number, converted to string.
-    light.style.animationDuration = stringTime; // updating the animation duration dynamically.
+    if (object1 == object2) {
+      light.style.opacity = "0%";
+      light.style.animationDuration = "0s";
+    }
+    else {
+      light.style.opacity = "100%";
+      stringTime = time.toString() + 's'; // time data type is number, converted to string.
+      light.style.animationDuration = stringTime; // updating the animation duration dynamically.
+    }
 
     // Displaying Time
     if (time > 60) {

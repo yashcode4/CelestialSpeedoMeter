@@ -82,8 +82,7 @@ span {
     border-radius: 50%;
     box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.1), 0 0 8px 8px rgba(255, 255, 255, 0.1), 0 0 20px 4px rgba(255, 255, 255, 1);
 
-    /* 500 seconds = 8 minutes and 20 seconds */
-    animation: lightTravel 500s linear infinite;
+    animation: lightTravel 0s linear infinite; /* Updating using JS */
 }
 
 /* Starting and Ending Path of Light */
