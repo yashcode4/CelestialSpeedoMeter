@@ -78,8 +78,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const distance = getDistance(object1, object2);
     const lightSpeed = 299792 // km/s
     const time = distance / lightSpeed; // seconds
-  
-    // Update the light duration
+
+    // Restart the light animation --> triggers the animation of the light
+    light.classList.remove("light-animation");
+    void light.offsetWidth; // Trigger reflow to restart the animation
+    light.classList.add("light-animation");
+
+    // Update the light duration --> Only triggers the duration of the light but not animation itself
     if (object1 == object2) {
       light.style.opacity = "0%";
       light.style.animationDuration = "0s";
