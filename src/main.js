@@ -285,11 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("seconds").textContent = "00";
         return;
       }
-
-      if(counterTime === isNaN(counterTarget)){
-        
-      }
-
+      
       seconds++;
 
       if (seconds == 60) {
