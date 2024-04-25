@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   let light = document.getElementById("light-duration"); // light element
   // Initial Values of objects
-  let object1 = 'sun';
-  let object2 = 'earth';
+  let object1 = 'Sun';
+  let object2 = 'Earth';
 
   // Gallery 1
   const gallery1 = document.querySelector('.gallery1');
@@ -118,146 +118,146 @@ document.addEventListener("DOMContentLoaded", function () {
   // Data
   function getDistance(object1, object2) {
     const distances = {
-      sun: {
-        earth: 149600000,
-        moon: 149984400,
-        mercury: 57910000,
-        venus: 108200000,
-        earth: 149600000,
-        mars: 227900000,
-        jupiter: 778600000,
-        saturn: 1433500000,
-        uranus: 2872500000,
-        neptune: 4495100000,
-        pluto: 5906400000
+      Sun: {
+        Earth: 149600000,
+        Moon: 149984400,
+        Mercury: 57910000,
+        Venus: 108200000,
+        Earth: 149600000,
+        Mars: 227900000,
+        Jupiter: 778600000,
+        Saturn: 1433500000,
+        Uranus: 2872500000,
+        Neptune: 4495100000,
+        Pluto: 5906400000
       },
-      earth: {
-        sun: 149600000,
-        moon: 384400,
-        mercury: 91610000,
-        venus: 41400000,
-        mars: 78210000,
-        jupiter: 629570000,
-        saturn: 1275000000,
-        uranus: 2719500000,
-        neptune: 4275500000,
-        pluto: 4523300000
+      Earth: {
+        Sun: 149600000,
+        Moon: 384400,
+        Mercury: 91610000,
+        Venus: 41400000,
+        Mars: 78210000,
+        Jupiter: 629570000,
+        Saturn: 1275000000,
+        Uranus: 2719500000,
+        Neptune: 4275500000,
+        Pluto: 4523300000
       },
-      moon: {
-        sun: 149984400,
-        earth: 384400,
-        mercury: 91610000,
-        venus: 41400000,
-        mars: 78210000,
-        jupiter: 629570000,
-        saturn: 1275000000,
-        uranus: 2719500000,
-        neptune: 4275500000,
-        pluto: 4523300000
+      Moon: {
+        Sun: 149984400,
+        Earth: 384400,
+        Mercury: 91610000,
+        Venus: 41400000,
+        Mars: 78210000,
+        Jupiter: 629570000,
+        Saturn: 1275000000,
+        Uranus: 2719500000,
+        Neptune: 4275500000,
+        Pluto: 4523300000
       },
-      mercury: {
-        sun: 57910000,
-        earth: 91610000,
-        moon: 91994400,
-        mercury: 0,
-        venus: 49900000,
-        mars: 205000000,
-        jupiter: 741000000,
-        saturn: 1352000000,
-        uranus: 2786800000,
-        neptune: 4340800000,
-        pluto: 4588600000
+      Mercury: {
+        Sun: 57910000,
+        Earth: 91610000,
+        Moon: 91994400,
+        Mercury: 0,
+        Venus: 49900000,
+        Mars: 205000000,
+        Jupiter: 741000000,
+        Saturn: 1352000000,
+        Uranus: 2786800000,
+        Neptune: 4340800000,
+        Pluto: 4588600000
       },
-      venus: {
-        sun: 41400000,
-        earth: 49900000,
-        moon: 49900000 + 384400,
-        mercury: 91610000,
-        venus: 0,
-        mars: 165000000,
-        jupiter: 681000000,
-        saturn: 1312000000,
-        uranus: 2746800000,
-        neptune: 4300800000,
-        pluto: 4548600000
+      Venus: {
+        Sun: 41400000,
+        Earth: 49900000,
+        Moon: 49900000 + 384400,
+        Mercury: 91610000,
+        Venus: 0,
+        Mars: 165000000,
+        Jupiter: 681000000,
+        Saturn: 1312000000,
+        Uranus: 2746800000,
+        Neptune: 4300800000,
+        Pluto: 4548600000
       },
-      mars: {
-        sun: 78210000,
-        earth: 205000000,
-        moon: 205000000 + 384400,
-        mercury: 227900000,
-        venus: 165000000,
-        mars: 0,
-        jupiter: 562000000,
-        saturn: 1195000000,
-        uranus: 2630300000,
-        neptune: 4184300000,
-        pluto: 4432100000
+      Mars: {
+        Sun: 78210000,
+        Earth: 205000000,
+        Moon: 205000000 + 384400,
+        Mercury: 227900000,
+        Venus: 165000000,
+        Mars: 0,
+        Jupiter: 562000000,
+        Saturn: 1195000000,
+        Uranus: 2630300000,
+        Neptune: 4184300000,
+        Pluto: 4432100000
       },
-      jupiter: {
-        sun: 778600000,
-        earth: 741000000,
-        moon: 741000000 + 384400,
-        mercury: 629570000,
-        venus: 681000000,
-        mars: 562000000,
-        jupiter: 0,
-        saturn: 455000000,
-        uranus: 1987900000,
-        neptune: 3541900000,
-        pluto: 3789700000
+      Jupiter: {
+        Sun: 778600000,
+        Earth: 741000000,
+        Moon: 741000000 + 384400,
+        Mercury: 629570000,
+        Venus: 681000000,
+        Mars: 562000000,
+        Jupiter: 0,
+        Saturn: 455000000,
+        Uranus: 1987900000,
+        Neptune: 3541900000,
+        Pluto: 3789700000
       },
-      saturn: {
-        sun: 1433500000,
-        earth: 1352000000,
-        moon: 1352000000 + 384400,
-        mercury: 1275000000,
-        venus: 1312000000,
-        mars: 1195000000,
-        jupiter: 455000000,
-        saturn: 0,
-        uranus: 1525900000,
-        neptune: 3089900000,
-        pluto: 3337700000
+      Saturn: {
+        Sun: 1433500000,
+        Earth: 1352000000,
+        Moon: 1352000000 + 384400,
+        Mercury: 1275000000,
+        Venus: 1312000000,
+        Mars: 1195000000,
+        Jupiter: 455000000,
+        Saturn: 0,
+        Uranus: 1525900000,
+        Neptune: 3089900000,
+        Pluto: 3337700000
       },
-      uranus: {
-        sun: 2872500000,
-        earth: 2786800000,
-        moon: 2786800000 + 384400,
-        mercury: 2719500000,
-        venus: 2746800000,
-        mars: 2630300000,
-        jupiter: 1987900000,
-        saturn: 1525900000,
-        uranus: 0,
-        neptune: 1564000000,
-        pluto: 1811800000
+      Uranus: {
+        Sun: 2872500000,
+        Earth: 2786800000,
+        Moon: 2786800000 + 384400,
+        Mercury: 2719500000,
+        Venus: 2746800000,
+        Mars: 2630300000,
+        Jupiter: 1987900000,
+        Saturn: 1525900000,
+        Uranus: 0,
+        Neptune: 1564000000,
+        Pluto: 1811800000
       },
-      neptune: {
-        sun: 4495100000,
-        earth: 4340800000,
-        moon: 4340800000 + 384400,
-        mercury: 4275500000,
-        venus: 4300800000,
-        mars: 4184300000,
-        jupiter: 3541900000,
-        saturn: 3089900000,
-        uranus: 1564000000,
-        neptune: 0,
-        pluto: 248200000
+      Neptune: {
+        Sun: 4495100000,
+        Earth: 4340800000,
+        Moon: 4340800000 + 384400,
+        Mercury: 4275500000,
+        Venus: 4300800000,
+        Mars: 4184300000,
+        Jupiter: 3541900000,
+        Saturn: 3089900000,
+        Uranus: 1564000000,
+        Neptune: 0,
+        Pluto: 248200000
       },
-      pluto: {
-        sun: 5906400000,
-        earth: 4523300000,
-        moon: 4523300000 + 384400,
-        mercury: 4588600000,
-        venus: 4548600000,
-        mars: 4432100000,
-        jupiter: 3789700000,
-        saturn: 3337700000,
-        uranus: 1811800000,
-        neptune: 248200000,
-        pluto: 0
+      Pluto: {
+        Sun: 5906400000,
+        Earth: 4523300000,
+        Moon: 4523300000 + 384400,
+        Mercury: 4588600000,
+        Venus: 4548600000,
+        Mars: 4432100000,
+        Jupiter: 3789700000,
+        Saturn: 3337700000,
+        Uranus: 1811800000,
+        Neptune: 248200000,
+        Pluto: 0
       }
     };
 
