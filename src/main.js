@@ -275,12 +275,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let seconds = counterTime % 60;
 
     timer = setInterval(() => {
-      if (counterTime === counterTarget || isNaN(counterTarget)) {
+      if (counterTime === counterTarget) {
         clearInterval(timer);
+        return;
+      }
+      if(isNaN(counterTarget)){
         document.getElementById("hours").textContent = "00";
         document.getElementById("minutes").textContent = "00";
         document.getElementById("seconds").textContent = "00";
         return;
+      }
+
+      if(counterTime === isNaN(counterTarget)){
+        
       }
 
       seconds++;
