@@ -269,7 +269,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function startTimer(time) {
     let counterTime = 0; // initial Counter;
     let counterTarget = Math.round(time); // target Counter
-    console.log(counterTarget)
 
     let hours = Math.floor(counterTime / 3600);
     let minutes = Math.floor((counterTime % 3600) / 60);
