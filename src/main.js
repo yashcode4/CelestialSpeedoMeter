@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const minutes = Math.floor((time % 3600) / 60); // Calculate remaining minutes
     const seconds = Math.round(time % 60); // Calculate remaining seconds and round
     if (object1 == object2) {
-      heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is 0 seconds.</h4>`
+      heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is 0 secs.</h4>`
     }
     else if (time > 3600) {
       heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is ${hours} hour, ${minutes} min and ${seconds} secs.</h4>`
