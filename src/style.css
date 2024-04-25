@@ -43,7 +43,7 @@ body {
     /* Gradiant clipped on text */
     background: linear-gradient(45deg, #0064ff, #00ff72);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 /* Heading */
