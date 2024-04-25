@@ -111,6 +111,8 @@ document.addEventListener("DOMContentLoaded", function () {
       heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is ${time.toFixed(2)} seconds.</h4>`
     }
 
+    clearInterval(timer);
+    startTimer(time); // Start the timer when the page loads
   }
 
   // Data
@@ -261,6 +263,54 @@ document.addEventListener("DOMContentLoaded", function () {
 
     return distances[object1][object2];
   };
+
+  // Timer Calculations
+  let timer; // Variable to hold the interval
+  function startTimer(time) {
+    let counterTime = 0; // initial Counter;
+    let counterTarget = Math.round(time); // target Counter
+
+    let hours = Math.floor(counterTime / 3600);
+    let minutes = Math.floor((counterTime % 3600) / 60);
+    let seconds = counterTime % 60;
+
+    timer = setInterval(() => {
+      if (counterTime === counterTarget) {
+        clearInterval(timer);
+        return;
+      }
+
+      seconds++;
+
+      if (seconds == 60) {
+        seconds = 0;
+        minutes++;
+
+        if (minutes == 0) {
+          minutes = 0;
+          hours++;
+
+          if (hours = 60) {
+            clearInterval(timer);
+            // Timer reached zero
+            return;
+          }
+        }
+      }
+
+      document.getElementById("hours").textContent = formatTime(hours);
+      document.getElementById("minutes").textContent = formatTime(minutes);
+      document.getElementById("seconds").textContent = formatTime(seconds);
+
+      counterTime++;
+    }, 1000);
+
+    return timer;
+  }
+
+  function formatTime(time) {
+    return time < 10 ? "0" + time : time;
+  }
 
   // Event listeners for next and previous buttons in gallery 1
   nextBtn.addEventListener('click', showNextImage);

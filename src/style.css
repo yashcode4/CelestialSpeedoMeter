@@ -69,9 +69,23 @@ body {
 
 /* Light Path */
 .lightPath {
+    height: 250px;
     width: 510px;
-    height: 100%;
 }
+
+.timer {
+    position: absolute;
+    padding-left: 10px;
+    left: 41%;
+    height: 70px;
+    width: 235px;
+    background-color: rgba(255, 255, 255, 0.200);
+}
+
+.timer span{
+    font-size: 50px;
+}
+
 
 /* Light */
 .light-animation {
@@ -102,7 +116,7 @@ body {
 }
 
 /* Light Trail */
-span::before {
+.light-animation::before {
     content: '';
     position: absolute;
     top: 50%;
