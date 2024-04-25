@@ -96,19 +96,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Displaying Time
-    if (time > 60) {
-      // Calculate minutes and seconds
-      const minutes = Math.floor(time / 60);
-      const seconds = Math.round(time % 60); // Round seconds
-
-      heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is ${minutes} minutes and ${seconds} seconds.</h4>`
-    }
-    else if (object1 == object2) {
+    const hours = Math.floor(time / 3600); // Calculate hours
+    const minutes = Math.floor((time % 3600) / 60); // Calculate remaining minutes
+    const seconds = Math.round(time % 60); // Calculate remaining seconds and round
+    if (object1 == object2) {
       heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is 0 seconds.</h4>`
     }
+    else if (time > 3600) {
+      heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is ${hours} hour, ${minutes} min and ${seconds} secs.</h4>`
+    }
+    else if (time > 60) {
+      heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is ${minutes} min and ${seconds} secs.</h4>`
+    }
     else {
-      // time in seconds
-      heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is ${time.toFixed(2)} seconds.</h4>`
+      heading.innerHTML = `<h4>The time taken by the light from the ${object1} to reach the ${object2} is ${time.toFixed(2)} secs.</h4>`
     }
 
     clearInterval(timer);
@@ -279,13 +280,13 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(timer);
         return;
       }
-      if(isNaN(counterTarget)){
+      if (isNaN(counterTarget)) {
         document.getElementById("hours").textContent = "00";
         document.getElementById("minutes").textContent = "00";
         document.getElementById("seconds").textContent = "00";
         return;
       }
-      
+
       seconds++;
 
       if (seconds == 60) {
