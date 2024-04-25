@@ -39,11 +39,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-family: "Aldrich", sans-serif;
-
-    /* Gradiant clipped on text */
-    background: linear-gradient(45deg, #0064ff, #00ff72);
-    background-clip: text;
-    color: transparent;
+    color: #00a1ff;
 }
 
 /* Heading */
