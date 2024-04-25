@@ -269,14 +269,18 @@ document.addEventListener("DOMContentLoaded", function () {
   function startTimer(time) {
     let counterTime = 0; // initial Counter;
     let counterTarget = Math.round(time); // target Counter
+    console.log(counterTarget)
 
     let hours = Math.floor(counterTime / 3600);
     let minutes = Math.floor((counterTime % 3600) / 60);
     let seconds = counterTime % 60;
 
     timer = setInterval(() => {
-      if (counterTime === counterTarget) {
+      if (counterTime === counterTarget || isNaN(counterTarget)) {
         clearInterval(timer);
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
         return;
       }
 
